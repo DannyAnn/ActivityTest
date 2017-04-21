@@ -102,11 +102,13 @@ public class FirstActivity extends AppCompatActivity {
 //                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
 //                startActivity(intent);
 
-                //singleInstance会启动一个返回栈来管理这个活动
-                //这个活动在返回栈中被封装成类似的单例模式，可以由多个程序共享
-                //但每次只能允许一个程序对其进行操作
-                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
-                startActivity(intent);
+//                singleInstance会启动一个返回栈来管理这个活动
+//                这个活动在返回栈中被封装成类似的单例模式，可以由多个程序共享
+//                但每次只能允许一个程序对其进行操作
+//                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
+//                startActivity(intent);
+
+                SecondActivity.actionStart(FirstActivity.this,"data1","data2");
             }
         });
 

@@ -13,8 +13,6 @@ public class BaseActivity extends AppCompatActivity {
 
         ActivityCollector.addActivity(this);
 
-
-
     }
 
     @Override
